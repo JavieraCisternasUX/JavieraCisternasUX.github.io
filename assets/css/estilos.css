@@ -115,6 +115,7 @@ body {
 .cardWork:hover img {
     width: 105%;
     text-align: center;
+    filter: brightness(.8);
 }
 
 .cardWork p {
@@ -127,16 +128,6 @@ body {
 .textoBlack {
     font-weight: 700;
     color: var(--principalOscuro);
-}
-
-.cardWork img {
-    /* width: 100%; */
-    transition: all .4s;
-    /* filter:brightness(0.8); */
-}
-
-.cardWork:hover img {
-    filter: brightness(.8);
 }
 
 .cardWork a {
@@ -167,14 +158,28 @@ body {
     color: var(--principal);
 }
 
-.TxtAbout h5{
+.TxtAbout h5 {
     margin-left: 8%;
 }
 
-.CardFun img{
-    width: 60%;
-    margin-bottom: 10%;
-    margin-top: 5%;
+.CardFun {
+    overflow: hidden;
+}
+
+.CardFun img {
+    width: 100%;
+    transition: all .4s;
+}
+
+.CardFun:hover img {
+    width: 105%;
+    text-align: center;
+    filter: brightness(.8);
+}
+
+.TextoExpl{
+    text-align: right;
+    /* text-align: end; */
 }
 
 /* inicio clases footer */
