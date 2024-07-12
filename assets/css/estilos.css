@@ -1,0 +1,208 @@
+:root {
+    --fondo: rgb(247, 247, 247);
+    --fondoOscuro: rgb(25, 9, 47);
+    --fondoClaro: rgb(227, 208, 255);
+
+    --principal: rgb(157, 103, 231);
+    --principalOscuro: rgb(111, 54, 190);
+    --principalClaro: rgb(194, 150, 255);
+
+    --textos: rgb(7, 0, 17);
+    --textosSec: rgb(243, 243, 243);
+}
+
+body {
+    background-color: var(--principal);
+    font-family: "Lato", sans-serif;
+}
+
+/* INICIO DE LAS CLASES DEL NAVBAR */
+.bg-BarraNav {
+    /* para cambiar el color de fondo del navbar */
+    background-color: var(--fondo);
+    font-weight: 500;
+    font-size: large;
+    /* box-shadow: inset; */
+}
+
+.nav-link {
+    /* para cambiar el color del texto del navbar */
+    color: var(--textos);
+}
+
+.nav-link:hover {
+    /* para ponerle color al hover de los textos del navbar */
+    color: var(--principal);
+    border-bottom: 3px solid var(--principalClaro);
+    /* padding-left: 12px; */
+}
+
+.nav-link i {
+    /* ajusta el tamaño de los íconos y alínea */
+    font-size: 30px;
+    margin: 0 3px;
+    color: var(--principalOscuro);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    /* para ponerle color al hover de los textos cliqueados del navbar */
+    color: var(--principalO);
+}
+
+.nav-item {
+    /* alínea los elementos en el navbar */
+    margin: auto 0;
+}
+
+.dropdown-menu {
+    /* color de fondo del menú desplegable */
+    background-color: var(--fondo);
+}
+
+.dropdown-item {
+    /* color de texto del menú desplegable */
+    color: var(--textos);
+}
+
+.dropdown-item:hover {
+    /* color del hover del menú desplegable */
+    background-color: var(--principalClaro);
+    color: var(--fondoOscuro);
+}
+
+.navbar-toggler {
+    /* cambia el color del menú hamburguesa */
+    color: var(--principalOscuro);
+    border-color: var(--principal);
+}
+
+.navbar-toggler:focus {
+    color: var(--principalClaro);
+}
+
+.logo {
+    padding-left: 30%;
+    height: 55px;
+    color: var(--principal);
+    /* border-color: var(--principal); */
+}
+
+.dropdown-menu[data-bs-popper] {
+    /* alínea el dropdown en fx del item padre */
+    left: -50%;
+}
+
+.NavIconos {
+    text-align: right;
+}
+
+/* FIN DE LAS CLASES DEL NAVBAR */
+
+.Encabezado {
+    background-color: var(--fondo);
+}
+
+.cardWork {
+    overflow: hidden;
+}
+
+.cardWork img {
+    width: 100%;
+    transition: all .4s;
+}
+
+.cardWork:hover img {
+    width: 105%;
+    text-align: center;
+}
+
+.cardWork p {
+    /* text-align: center; */
+    margin-top: 10px;
+    font-size: 12px;
+    /* font-weight: 500; */
+}
+
+.textoBlack {
+    font-weight: 700;
+    color: var(--principalOscuro);
+}
+
+.cardWork img {
+    /* width: 100%; */
+    transition: all .4s;
+    /* filter:brightness(0.8); */
+}
+
+.cardWork:hover img {
+    filter: brightness(.8);
+}
+
+.cardWork a {
+    text-decoration: none;
+    color: var(--textos);
+}
+
+.cardWork h6 {
+    font-size: large;
+}
+
+.cardWork h4 {
+    font-weight: 510;
+    font-size: x-large;
+}
+
+.FotoAbout {
+    overflow: hidden;
+}
+
+.FotoAbout img {
+    width: 50%;
+    text-align: left;
+    border-radius: 50%;
+}
+
+.FotoAbout span {
+    color: var(--principal);
+}
+
+.TxtAbout h5{
+    margin-left: 8%;
+}
+
+.CardFun img{
+    width: 60%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+/* inicio clases footer */
+footer {
+    background-color: var(--principalOscuro);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--textosSec);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--principalClaro);
+}
+
+footer i {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+footer i:hover {
+    color: var(--principalClaro);
+}
+
+.TextoFooter {
+    color: var(--textosSec);
+}
+
+/* fin clases footer */
